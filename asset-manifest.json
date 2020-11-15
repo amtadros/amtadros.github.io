@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/amtadros.github.io/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/amtadros.github.io/static/js/main.8f757a2b.chunk.js",
+    "main.js.map": "/amtadros.github.io/static/js/main.8f757a2b.chunk.js.map",
+    "runtime-main.js": "/amtadros.github.io/static/js/runtime-main.925e32bd.js",
+    "runtime-main.js.map": "/amtadros.github.io/static/js/runtime-main.925e32bd.js.map",
+    "static/js/2.817c0db8.chunk.js": "/amtadros.github.io/static/js/2.817c0db8.chunk.js",
+    "static/js/2.817c0db8.chunk.js.map": "/amtadros.github.io/static/js/2.817c0db8.chunk.js.map",
+    "static/js/3.c8966ab3.chunk.js": "/amtadros.github.io/static/js/3.c8966ab3.chunk.js",
+    "static/js/3.c8966ab3.chunk.js.map": "/amtadros.github.io/static/js/3.c8966ab3.chunk.js.map",
+    "index.html": "/amtadros.github.io/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/amtadros.github.io/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.817c0db8.chunk.js.LICENSE.txt": "/amtadros.github.io/static/js/2.817c0db8.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/amtadros.github.io/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.925e32bd.js",
+    "static/js/2.817c0db8.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.8f757a2b.chunk.js"
+  ]
+}
