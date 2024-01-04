@@ -1,14 +1,11 @@
 import './App.css'
-import profilePic from './assets/profile-pic.jpeg'
+import SidePanel from './SidePanel/SidePanel'
 
 function App() {
   return (
-    <>
-     <div>
-     <h1>Mandy Tadros</h1>
-      </div> 
-      <img src={profilePic} className="logo" alt="Mandy Tadros" />
-    </>
+    <div className='main'>
+      <SidePanel />
+    </div>
   )
 }
 
