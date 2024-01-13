@@ -5,7 +5,7 @@ function App() {
   return (
     <>
      <div>
-     <h1>Mandy Tadros</h1>
+     <h1>Mandy Tadros!</h1>
       </div> 
       <img src={profilePic} className="logo" alt="Mandy Tadros" />
     </>
