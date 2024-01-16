@@ -10,9 +10,6 @@ import {
   CardHeader,
   GridItem,
   Heading,
-  Stack,
-  StackDivider,
-  Text,
 } from "@chakra-ui/react";
 
 export function Content() {
