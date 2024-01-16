@@ -1,15 +1,15 @@
-import './App.css'
-import profilePic from './assets/profile-pic.jpeg'
+import { Grid } from "@chakra-ui/react";
+import "./App.css";
+import { Content } from "./components/Content";
+import { Sidebar } from "./components/Sidebar";
 
 function App() {
   return (
-    <>
-     <div>
-     <h1>Mandy Tadros!</h1>
-      </div> 
-      <img src={profilePic} className="logo" alt="Mandy Tadros" />
-    </>
-  )
+    <Grid templateColumns='1fr 2fr' columnGap={16} height='100%' width='100%' paddingTop={16}>
+      <Sidebar />
+      <Content />
+    </Grid>
+  );
 }
 
-export default App
+export default App;
