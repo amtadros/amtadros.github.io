@@ -1,11 +1,15 @@
-import { GridItem } from "@chakra-ui/react";
+import { Box, GridItem, Heading } from "@chakra-ui/react";
 import profilePic from "../assets/profile-pic.jpeg";
 
 export function Sidebar() {
   return (
     <GridItem>
-      <h1>Mandy Tadros</h1>
-      <img src={profilePic} className="logo" alt="Mandy Tadros" />
+      <Heading size="xl" textTransform="uppercase" textAlign="center">
+        Mandy Tadros
+      </Heading>
+      <Box display="flex" justifyContent="center">
+        <img src={profilePic} className="logo" alt="Mandy Tadros" />
+      </Box>
     </GridItem>
   );
 }
