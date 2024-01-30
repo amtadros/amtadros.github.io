@@ -1,66 +1,49 @@
 import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  Box,
   Card,
   CardBody,
   CardHeader,
   GridItem,
   Heading,
+  SimpleGrid,
+  Text
 } from "@chakra-ui/react";
+import { useContentful } from "../contentful";
+import { useEffect, useState } from "react";
+import { BlogPostFields } from "../contentful/types";
+import RichText from "../contentful/RichText";
 
 export function Content() {
-  return (
-    <GridItem width="100%">
-      <Card>
-        <CardHeader>
-          <Heading size="md">🎧 Ya heard it here second</Heading>
-        </CardHeader>
-        <CardBody>
-          <Accordion allowMultiple>
-            <AccordionItem>
-              <h2>
-                <AccordionButton>
-                  <Box as="span" flex="1" textAlign="left">
-                    <Heading size="xs" textTransform="uppercase">
-                      Managing Complexity in Software
-                    </Heading>
-                  </Box>
-                  <AccordionIcon />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </AccordionPanel>
-            </AccordionItem>
+  const { getBlogs } = useContentful();
+  const [blogs, setBlogs] = useState<BlogPostFields[] | undefined>();
 
-            <AccordionItem>
-              <h2>
-                <AccordionButton>
-                  <Box as="span" flex="1" textAlign="left">
-                    <Heading size="xs" textTransform="uppercase">
-                      Simplicity & Complexity: The Beauty & the Beast?
-                    </Heading>
-                  </Box>
-                  <AccordionIcon />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </AccordionPanel>
-            </AccordionItem>
-          </Accordion>
-        </CardBody>
-      </Card>
+  useEffect(() => {
+    getBlogs().then((blogs) => setBlogs(blogs));
+  }, []);
+
+  if (!blogs) return;
+
+  return (
+    <GridItem>
+      <Heading size="md" pb={4}>
+        🎧 You Heard It Here Second
+      </Heading>
+      <Text fontSize='small' pb={4} pl={2}>A "bullet point blog" of things that stood out to me from books, podcasts, etc.</Text>
+      <SimpleGrid spacing={4}>
+        {blogs.map((blog) => {
+          return (
+            <Card padding={4} key={blog.id}>
+              <CardHeader>
+                <Heading size="xs" textTransform="uppercase">
+                  {blog.title}
+                </Heading>
+              </CardHeader>
+              <CardBody>
+                <RichText document={blog.body} />
+              </CardBody>
+            </Card>
+          );
+        })}
+      </SimpleGrid>
     </GridItem>
   );
 }

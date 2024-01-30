@@ -3,7 +3,7 @@ import profilePic from "../assets/profile-pic.jpeg";
 
 export function Sidebar() {
   return (
-    <GridItem>
+    <GridItem height="100%">
       <Heading size="xl" textTransform="uppercase" textAlign="center">
         Mandy Tadros
       </Heading>
