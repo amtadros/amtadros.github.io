@@ -39,9 +39,6 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-        env:
-          VITE_REACT_APP_CONTENTFUL_API: ${{ secrets.VITE_REACT_APP_CONTENTFUL_API }}
-          VITE_REACT_APP_CONTENTFUL_SPACE_ID: ${{ secrets.VITE_REACT_APP_CONTENTFUL_SPACE_ID }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
