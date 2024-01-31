@@ -33,7 +33,6 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           node-version: 18
           cache: 'npm'
       - name: Install dependencies
