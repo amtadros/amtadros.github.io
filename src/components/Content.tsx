@@ -24,6 +24,41 @@ export function Content() {
       </Text>
 
       <SimpleGrid spacing={4}>
+        <Card>
+          <CardHeader>
+            <Heading size="xs" textTransform="uppercase">
+              A Philosophy of Software Design
+            </Heading>
+          </CardHeader>
+          <CardBody>
+            Symptoms of complexity:
+            <UnorderedList>
+              <ListItem>
+                Change Amplification: seemingly simple change requires code
+                modifications in many different places.
+              </ListItem>
+              <ListItem>
+                Cognitive Load: how much a developer needs to know in order to
+                complete a task. A higher cognitive load means that developers
+                have to spend more time learning the required information, and
+                there is a greater risk of bugs because they have missed
+                something important. Sometimes an approach that requires more
+                lines of code is actually simpler, because it reduces cognitive
+                load.
+              </ListItem>
+              <ListItem>
+                Unknown Unknowns: An unknown unknown means that there is
+                something you need to know, but there is no way for you to find
+                out what it is, or even whether there is an issue. One of the
+                most important goals of good design is for a system to be
+                obvious. An obvious system is one where a developer can make a
+                quick guess about what to do, without thinking very hard, and
+                yet be confident that the guess is correct.
+              </ListItem>
+            </UnorderedList>
+          </CardBody>
+        </Card>
+
         <Card padding={4}>
           <CardHeader>
             <Heading size="xs" textTransform="uppercase">
@@ -103,8 +138,8 @@ export function Content() {
               <ListItem>On subtraction instead of addition:</ListItem>
               <ListItem ml={4}>
                 Why do we make things more complex? One theme is “the additive
-                nature of how we try and solve things…it&apos;s always by addition,
-                it&apos;s very rarely by removal.”
+                nature of how we try and solve things…it&apos;s always by
+                addition, it&apos;s very rarely by removal.”
               </ListItem>
               <ListItem ml={4}>
                 On personal learning. “There may be jumps in your improvement of
@@ -121,8 +156,8 @@ export function Content() {
               </ListItem>
               <ListItem>
                 “Software development is a process of inquiry. It&apos;s not a
-                process of production.” We don&apos;t know everything upfront. We
-                need to ask questions and let stuff emerge. This can make it
+                process of production.” We don&apos;t know everything upfront.
+                We need to ask questions and let stuff emerge. This can make it
                 hard to estimate work. And it can be hard to communicate why
                 it&apos;s hard to estimate because everyone is operating from
                 different mental models. He talked about the{" "}
