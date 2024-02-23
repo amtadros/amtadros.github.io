@@ -36,20 +36,20 @@ export function Content() {
             Symptoms of complexity:
             <UnorderedList>
               <ListItem>
-                Change Amplification: seemingly simple change requires code
-                modifications in many different places.
+                <i>Change Amplification</i>: seemingly simple change requires
+                code modifications in many different places.
               </ListItem>
               <ListItem>
-                Cognitive Load: how much a developer needs to know in order to
-                complete a task. A higher cognitive load means that developers
-                have to spend more time learning the required information, and
-                there is a greater risk of bugs because they have missed
-                something important. Sometimes an approach that requires more
-                lines of code is actually simpler, because it reduces cognitive
-                load.
+                <i>Cognitive Load</i>: how much a developer needs to know in
+                order to complete a task. A higher cognitive load means that
+                developers have to spend more time learning the required
+                information, and there is a greater risk of bugs because they
+                have missed something important. Sometimes an approach that
+                requires more lines of code is actually simpler, because it
+                reduces cognitive load.
               </ListItem>
               <ListItem>
-                Unknown Unknowns: An unknown unknown means that there is
+                <i>Unknown Unknowns</i>: An unknown unknown means that there is
                 something you need to know, but there is no way for you to find
                 out what it is, or even whether there is an issue. One of the
                 most important goals of good design is for a system to be
@@ -58,6 +58,9 @@ export function Content() {
                 yet be confident that the guess is correct.
               </ListItem>
             </UnorderedList>
+            <br/>
+            <br/>
+            (More notes coming soon 🙂)
           </CardBody>
         </Card>
 
@@ -114,7 +117,6 @@ export function Content() {
 
         <Card heading="Simplicity & Complexity: The Beauty & the Beast?">
           <CardBody>
-            
             <Link
               href="https://gotopia.tech/articles/205/simplicity-and-complexity-the-beauty-and-the-beast"
               isExternal
