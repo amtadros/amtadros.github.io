@@ -1,7 +1,5 @@
 import {
-  Card,
   CardBody,
-  CardHeader,
   GridItem,
   Heading,
   Link,
@@ -10,6 +8,7 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
+import Card from "./Card";
 
 export function Content() {
   return (
@@ -24,12 +23,7 @@ export function Content() {
       </Text>
 
       <SimpleGrid spacing={4}>
-        <Card>
-          <CardHeader>
-            <Heading size="xs" textTransform="uppercase">
-              A Philosophy of Software Design
-            </Heading>
-          </CardHeader>
+        <Card heading="A Philosophy of Software Design">
           <CardBody>
             Symptoms of complexity:
             <UnorderedList>
@@ -59,12 +53,7 @@ export function Content() {
           </CardBody>
         </Card>
 
-        <Card padding={4}>
-          <CardHeader>
-            <Heading size="xs" textTransform="uppercase">
-              Managing Complexity in Software
-            </Heading>
-          </CardHeader>
+        <Card heading="Managing Complexity in Software">
           <CardBody>
             Listen to or read the talk{" "}
             <Link
@@ -115,12 +104,7 @@ export function Content() {
           </CardBody>
         </Card>
 
-        <Card padding={4}>
-          <CardHeader>
-            <Heading size="xs" textTransform="uppercase">
-              Simplicity & Complexity: The Beauty & the Beast?
-            </Heading>
-          </CardHeader>
+        <Card heading="Simplicity & Complexity: The Beauty & the Beast?">
           <CardBody>
             Listen to or read the talk{" "}
             <Link
