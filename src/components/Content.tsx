@@ -25,6 +25,14 @@ export function Content() {
       <SimpleGrid spacing={4}>
         <Card heading="A Philosophy of Software Design">
           <CardBody>
+            <Link
+              href="https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201"
+              isExternal
+            >
+              Check out the book here.
+            </Link>
+            <br />
+            <br />
             Symptoms of complexity:
             <UnorderedList>
               <ListItem>
@@ -55,14 +63,14 @@ export function Content() {
 
         <Card heading="Managing Complexity in Software">
           <CardBody>
-            Listen to or read the talk{" "}
             <Link
               href="https://gotopia.tech/articles/174/expert-talk-managing-complexity-in-software"
               isExternal
             >
-              here
+              Listen to or read the talk here.
             </Link>
-            .
+            <br />
+            <br />
             <UnorderedList>
               <ListItem>
                 <Link
@@ -106,14 +114,15 @@ export function Content() {
 
         <Card heading="Simplicity & Complexity: The Beauty & the Beast?">
           <CardBody>
-            Listen to or read the talk{" "}
+            
             <Link
               href="https://gotopia.tech/articles/205/simplicity-and-complexity-the-beauty-and-the-beast"
               isExternal
             >
-              here
+              Listen to or read the talk here.
             </Link>
-            .
+            <br />
+            <br />
             <UnorderedList>
               <ListItem>
                 “Developers are drawn to complexity like moths to a flame and
