@@ -14,8 +14,8 @@ export default function Card({ heading, children }: Props) {
     <ChakraCard
       paddingTop={8}
       paddingBottom={8}
-      paddingLeft={24}
-      paddingRight={24}
+      paddingLeft={{ md: "12", sm: "18"}}
+      paddingRight={{ md: "12", sm: "18"}}
     >
       <CardHeader>
         <Heading size="xs" textTransform="uppercase">

@@ -13,11 +13,11 @@ import Card from "./Card";
 export function Content() {
   return (
     <GridItem>
-      <Heading size="md" pb={4}>
+      <Heading size="md" pb={4} textAlign={{ md: 'left', sm: 'center' }}>
         🎧 You Heard It Here Second
       </Heading>
 
-      <Text fontSize="small" pb={4} pl={2}>
+      <Text fontSize="small" pb={4} pl={2} textAlign={{ md: 'left', sm: 'center' }}>
         A "bullet point blog" of things that stood out to me from books,
         podcasts, etc.
       </Text>
